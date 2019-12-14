@@ -12,6 +12,7 @@ Bonus: Can you do this in one pass?
 
 numbers_list_1 = [10, 15, 3, 7, 0]
 numbers_list_2 = [10, 15, 3, 7, 0, 0]
+numbers_list_3 = [10, -15, -10, 7, 0, -5]
 k = 17
 
 
@@ -28,5 +29,5 @@ print(sum_of_two_is_k(numbers_list_1, k))
 print(sum_of_two_is_k(numbers_list_1, 0))
 print(sum_of_two_is_k(numbers_list_2, 0))
 print(sum_of_two_is_k(numbers_list_2, 11))
-print(sum_of_two_is_k([10, -15, -10, 7, 0, -5], -15))
-print(sum_of_two_is_k([10, -15, -10, 7, 0, -5], -30))
+print(sum_of_two_is_k(numbers_list_3, -15))
+print(sum_of_two_is_k(numbers_list_3, -30))
