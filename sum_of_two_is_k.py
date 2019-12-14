@@ -17,12 +17,12 @@ k = 17
 
 
 def sum_of_two_is_k(numbers, sum_total):
-    result = set()
-    for number in numbers:
-        if sum_total - number in result:
-            return True
-        result.add(number)
-    return False
+    result = set()                        # storage for holding the difference between the given k # and current number
+    for number in numbers:                # loop through the list and...
+        if sum_total - number in result:  # evaluate that the difference is in the result set. If yes,
+            return True                   # return True
+        result.add(number)                # otherwise, add the difference to the result set, and continue looping
+    return False                          # return False if all numbers were evaluated and did not meet the if criteria.
 
 
 print(sum_of_two_is_k(numbers_list_1, k))
